@@ -11,7 +11,7 @@ const client = new documentClient(process.env.DB_ENDPOINT, {
 router.get('/', function(req, res, next) {
   // Check database & collection settings
   if(!process.env.DB_NAME) {
-    process.env.DB_NAME = "mydb";
+    process.env.DB_NAME = "EA-DB";
   }
   if(!process.env.DB_COLLECTION) {
     process.env.DB_COLLECTION = "photos";
